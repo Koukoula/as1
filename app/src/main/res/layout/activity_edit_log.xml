@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="c301.koukoula_fueltrack.editLogActivity">
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date: "
+        android:layout_alignBottom="@+id/date_edit"
+        android:layout_alignTop="@+id/date_edit" />
+    <EditText android:id="@+id/date_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/date_hint_edit"
+        android:inputType="date"
+        android:layout_toRightOf="@+id/date"
+        android:layout_toEndOf="@+id/date" />
+
+    <TextView
+        android:id="@+id/station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Station: "
+        android:layout_below="@+id/date_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/station_edit" />
+
+    <EditText android:id="@+id/station_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/station_hint_edit"
+        android:layout_below="@+id/date_edit"
+        android:layout_toRightOf="@+id/station"
+        android:layout_toEndOf="@+id/station" />
+
+    <TextView
+        android:id="@+id/odometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Odometer: "
+        android:layout_below="@+id/station_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/odometer_edit" />
+
+    <EditText android:id="@+id/odometer_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/odometer_hint_edit"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/station_edit"
+        android:layout_toRightOf="@+id/odometer"
+        android:layout_toEndOf="@+id/odometer" />
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Grade: "
+        android:layout_below="@+id/odometer_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/grad_edit" />
+
+    <EditText android:id="@+id/grad_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/grade_hint_edit"
+        android:layout_below="@+id/odometer_edit"
+        android:layout_toRightOf="@+id/grade"
+        android:layout_toEndOf="@+id/grade" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount: "
+        android:layout_below="@+id/grad_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/amount_edit" />
+
+    <EditText android:id="@+id/amount_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount_hint_edit"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/grad_edit"
+        android:layout_toRightOf="@+id/amount"
+        android:layout_toEndOf="@+id/amount" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cost: "
+        android:layout_below="@+id/amount_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/cost_edit" />
+
+    <EditText android:id="@+id/cost_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/cost_hint_edit"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/amount_edit"
+        android:layout_toRightOf="@+id/cost"
+        android:layout_toEndOf="@+id/cost" />
+
+
+    <Button android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toRightOf="@+id/submit"
+        android:layout_toEndOf="@+id/submit"/>
+
+
+</RelativeLayout>
+
+
